@@ -1,0 +1,41 @@
+.container {
+    background-color: greenyellow;
+    text-align: center;
+  }
+  
+  .rollDownContainer {
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 1),
+        rgba(0, 0, 0, 0)
+      ),
+      linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-size: 100% 0%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: top;
+  
+    animation: rolldown 3s linear infinite;
+  }
+  
+  @keyframes rolldown {
+    0% {
+      -webkit-mask-size: 100% 0%;
+    }
+    80% {
+      -webkit-mask-size: 100% 100%;
+    }
+    100% {
+      -webkit-mask-size: 100% 200%;
+    }
+  }
+  
+  .hugeLetter {
+    font-size: 500px;
+    margin: 0;
+  }
+  
+  p {
+    color: red;
+    font-size: 30px;
+  }
+  
