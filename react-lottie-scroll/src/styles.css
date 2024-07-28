@@ -1,0 +1,14 @@
+.App {
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 18px;
+}
+
+.lottie-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
